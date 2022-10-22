@@ -1,0 +1,30 @@
+html {
+  box-sizing: border-box;
+  background-color: #49aada;
+}
+
+.blog {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px 15px;
+  width: 990px;
+  max-width: 95%;
+  background-color: #fff;
+}
+
+@media (max-width: 438px) {
+  table tr {
+    display: block;
+  }
+
+  table td {
+    display: flex;
+    justify-content: space-between;
+    width: 99% !important; /* так лучше не делать :), так как стили определенны в атрибуте элемента, у них приоритет выше */
+    min-height: 100px !important;
+  }
+
+  table td span {
+    width: 100%;
+  }
+}
